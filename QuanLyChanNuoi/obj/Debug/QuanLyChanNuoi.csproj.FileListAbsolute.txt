@@ -1,0 +1,9 @@
+D:\Code\DoAn\QuanLyChanNuoi\bin\Debug\QuanLyChanNuoi.exe.config
+D:\Code\DoAn\QuanLyChanNuoi\bin\Debug\QuanLyChanNuoi.exe
+D:\Code\DoAn\QuanLyChanNuoi\bin\Debug\QuanLyChanNuoi.pdb
+D:\Code\DoAn\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.csproj.AssemblyReference.cache
+D:\Code\DoAn\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.Properties.Resources.resources
+D:\Code\DoAn\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.csproj.GenerateResource.cache
+D:\Code\DoAn\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.csproj.CoreCompileInputs.cache
+D:\Code\DoAn\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.exe
+D:\Code\DoAn\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.pdb
