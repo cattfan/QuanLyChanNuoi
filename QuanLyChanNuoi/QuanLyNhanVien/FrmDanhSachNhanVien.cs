@@ -16,5 +16,29 @@ namespace QuanLyChanNuoi.QuanLyNhanVien
         {
             InitializeComponent();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmThemNhanVien NhanVien = new FrmThemNhanVien();
+            NhanVien.FormClosed += (s, args) => this.Show();
+            NhanVien.FormTitle = "Thêm Nhân Viên";
+            NhanVien.Show();
+
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            FrmThemNhanVien NhanVien = new FrmThemNhanVien();
+            NhanVien.FormClosed += (s, args) => this.Show();
+            NhanVien.FormTitle = "Sửa Nhân Viên";
+            NhanVien.Show();
+        }
     }
 }

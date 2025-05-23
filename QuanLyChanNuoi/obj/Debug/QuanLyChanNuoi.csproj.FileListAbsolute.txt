@@ -7,3 +7,5 @@ D:\Code\DoAn\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.csproj.GenerateResource.cac
 D:\Code\DoAn\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.csproj.CoreCompileInputs.cache
 D:\Code\DoAn\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.exe
 D:\Code\DoAn\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.pdb
+D:\Code\DoAn\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.QuanLyNhanVien.FrmDanhSachNhanVien.resources
+D:\Code\DoAn\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.QuanLyNhanVien.FrmThemNhanVien.resources

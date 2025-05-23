@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyChanNuoi.QuanLyNhanVien;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace QuanLyChanNuoi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormLogin());
+            Application.Run(new FrmDanhSachNhanVien());
         }
     }
 }
