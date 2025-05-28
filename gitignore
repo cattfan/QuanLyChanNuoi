@@ -1,0 +1,56 @@
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# MonoDevelop
+*.userprefs
+
+# Visual Studio Code settings
+.vscode/
+
+# ASP.NET temporary files
+*.dbmdl
+*.bak
+*.sql
+
+# NuGet packages
+*.nupkg
+packages/
+*.snupkg
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Visual Studio 2019/2022 config folders
+.vs/
+
+# Rider
+.idea/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+*.swp
+*.swo
+*.~*
+
+# Test results
+TestResults/
+
+# Publish output
+publish/
+
+# Secrets
+secrets.json
+appsettings.Development.json
+appsettings.Local.json
