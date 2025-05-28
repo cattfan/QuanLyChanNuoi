@@ -60,9 +60,9 @@
             // 
             // btnLoc
             // 
-            this.btnLoc.Location = new System.Drawing.Point(683, 73);
+            this.btnLoc.Location = new System.Drawing.Point(674, 63);
             this.btnLoc.Name = "btnLoc";
-            this.btnLoc.Size = new System.Drawing.Size(87, 23);
+            this.btnLoc.Size = new System.Drawing.Size(80, 40);
             this.btnLoc.TabIndex = 2;
             this.btnLoc.Text = "Lọc";
             this.btnLoc.UseVisualStyleBackColor = true;
@@ -80,9 +80,9 @@
             // 
             // btnTim
             // 
-            this.btnTim.Location = new System.Drawing.Point(387, 74);
+            this.btnTim.Location = new System.Drawing.Point(374, 63);
             this.btnTim.Name = "btnTim";
-            this.btnTim.Size = new System.Drawing.Size(87, 22);
+            this.btnTim.Size = new System.Drawing.Size(80, 40);
             this.btnTim.TabIndex = 2;
             this.btnTim.Text = "Tìm...";
             this.btnTim.UseVisualStyleBackColor = true;
@@ -98,18 +98,18 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(683, 518);
+            this.btnThoat.Location = new System.Drawing.Point(674, 501);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(87, 23);
+            this.btnThoat.Size = new System.Drawing.Size(80, 40);
             this.btnThoat.TabIndex = 2;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             // 
             // btnSua
             // 
-            this.btnSua.Location = new System.Drawing.Point(539, 518);
+            this.btnSua.Location = new System.Drawing.Point(539, 501);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(87, 23);
+            this.btnSua.Size = new System.Drawing.Size(80, 40);
             this.btnSua.TabIndex = 2;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
@@ -117,9 +117,9 @@
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(353, 518);
+            this.btnThem.Location = new System.Drawing.Point(360, 501);
             this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(87, 23);
+            this.btnThem.Size = new System.Drawing.Size(80, 40);
             this.btnThem.TabIndex = 2;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = true;
@@ -127,9 +127,9 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(446, 518);
+            this.btnXoa.Location = new System.Drawing.Point(453, 501);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(87, 23);
+            this.btnXoa.Size = new System.Drawing.Size(80, 40);
             this.btnXoa.TabIndex = 2;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
