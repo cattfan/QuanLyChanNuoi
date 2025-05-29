@@ -1,10 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\QuanLyChanNuoi\\QuanLyChanNuoi\\",
+  "WorkspaceRootPath": "C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\A\\QuanLyChanNuoi\\QuanLyChanNuoi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{964D7054-7112-4062-B90C-9C5030EAB8E9}|QuanLyChanNuoi.csproj|c:\\users\\cattfan\\desktop\\laptrinhwinform\\quanlychannuoi\\quanlychannuoi\\formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{964D7054-7112-4062-B90C-9C5030EAB8E9}|QuanLyChanNuoi.csproj|solutionrelative:formhoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{964D7054-7112-4062-B90C-9C5030EAB8E9}|QuanLyChanNuoi.csproj|C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\A\\QuanLyChanNuoi\\QuanLyChanNuoi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{964D7054-7112-4062-B90C-9C5030EAB8E9}|QuanLyChanNuoi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{964D7054-7112-4062-B90C-9C5030EAB8E9}|QuanLyChanNuoi.csproj|c:\\users\\cattfan\\desktop\\laptrinhwinform\\a\\quanlychannuoi\\quanlychannuoi\\formhomeuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{964D7054-7112-4062-B90C-9C5030EAB8E9}|QuanLyChanNuoi.csproj|solutionrelative:formhomeuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{964D7054-7112-4062-B90C-9C5030EAB8E9}|QuanLyChanNuoi.csproj|c:\\users\\cattfan\\desktop\\laptrinhwinform\\a\\quanlychannuoi\\quanlychannuoi\\formhomeuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{964D7054-7112-4062-B90C-9C5030EAB8E9}|QuanLyChanNuoi.csproj|solutionrelative:formhomeuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{964D7054-7112-4062-B90C-9C5030EAB8E9}|QuanLyChanNuoi.csproj|C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\A\\QuanLyChanNuoi\\QuanLyChanNuoi\\user case admin\\formhomeadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{964D7054-7112-4062-B90C-9C5030EAB8E9}|QuanLyChanNuoi.csproj|solutionrelative:user case admin\\formhomeadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{964D7054-7112-4062-B90C-9C5030EAB8E9}|QuanLyChanNuoi.csproj|C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\A\\QuanLyChanNuoi\\QuanLyChanNuoi\\user case admin\\formhomeadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{964D7054-7112-4062-B90C-9C5030EAB8E9}|QuanLyChanNuoi.csproj|solutionrelative:user case admin\\formhomeadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{964D7054-7112-4062-B90C-9C5030EAB8E9}|QuanLyChanNuoi.csproj|C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\A\\QuanLyChanNuoi\\QuanLyChanNuoi\\user case admin\\formquanlyvattu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{964D7054-7112-4062-B90C-9C5030EAB8E9}|QuanLyChanNuoi.csproj|solutionrelative:user case admin\\formquanlyvattu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{964D7054-7112-4062-B90C-9C5030EAB8E9}|QuanLyChanNuoi.csproj|C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\A\\QuanLyChanNuoi\\QuanLyChanNuoi\\user case admin\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{964D7054-7112-4062-B90C-9C5030EAB8E9}|QuanLyChanNuoi.csproj|solutionrelative:user case admin\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +38,92 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormHoaDon.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\QuanLyChanNuoi\\QuanLyChanNuoi\\FormHoaDon.cs",
-              "RelativeDocumentMoniker": "FormHoaDon.cs",
-              "ToolTip": "C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\QuanLyChanNuoi\\QuanLyChanNuoi\\FormHoaDon.cs [Design]",
-              "RelativeToolTip": "FormHoaDon.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "FormHomeUser.cs",
+              "DocumentMoniker": "C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\A\\QuanLyChanNuoi\\QuanLyChanNuoi\\FormHomeUser.cs",
+              "RelativeDocumentMoniker": "FormHomeUser.cs",
+              "ToolTip": "C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\A\\QuanLyChanNuoi\\QuanLyChanNuoi\\FormHomeUser.cs",
+              "RelativeToolTip": "FormHomeUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-28T11:09:26.343Z",
+              "WhenOpened": "2025-05-29T06:07:33.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormHomeUser.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\A\\QuanLyChanNuoi\\QuanLyChanNuoi\\FormHomeUser.cs",
+              "RelativeDocumentMoniker": "FormHomeUser.cs",
+              "ToolTip": "C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\A\\QuanLyChanNuoi\\QuanLyChanNuoi\\FormHomeUser.cs [Design]",
+              "RelativeToolTip": "FormHomeUser.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T06:05:41.238Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\A\\QuanLyChanNuoi\\QuanLyChanNuoi\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\A\\QuanLyChanNuoi\\QuanLyChanNuoi\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T05:34:25.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormHomeAdmin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\A\\QuanLyChanNuoi\\QuanLyChanNuoi\\User case Admin\\FormHomeAdmin.cs",
+              "RelativeDocumentMoniker": "User case Admin\\FormHomeAdmin.cs",
+              "ToolTip": "C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\A\\QuanLyChanNuoi\\QuanLyChanNuoi\\User case Admin\\FormHomeAdmin.cs [Design]",
+              "RelativeToolTip": "User case Admin\\FormHomeAdmin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T05:30:37.713Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormHomeAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\A\\QuanLyChanNuoi\\QuanLyChanNuoi\\User case Admin\\FormHomeAdmin.cs",
+              "RelativeDocumentMoniker": "User case Admin\\FormHomeAdmin.cs",
+              "ToolTip": "C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\A\\QuanLyChanNuoi\\QuanLyChanNuoi\\User case Admin\\FormHomeAdmin.cs",
+              "RelativeToolTip": "User case Admin\\FormHomeAdmin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T05:44:49.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\A\\QuanLyChanNuoi\\QuanLyChanNuoi\\User case Admin\\FormLogin.cs",
+              "RelativeDocumentMoniker": "User case Admin\\FormLogin.cs",
+              "ToolTip": "C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\A\\QuanLyChanNuoi\\QuanLyChanNuoi\\User case Admin\\FormLogin.cs [Design]",
+              "RelativeToolTip": "User case Admin\\FormLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T05:42:33.007Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormQuanLyVatTu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\A\\QuanLyChanNuoi\\QuanLyChanNuoi\\User case Admin\\FormQuanLyVatTu.cs",
+              "RelativeDocumentMoniker": "User case Admin\\FormQuanLyVatTu.cs",
+              "ToolTip": "C:\\Users\\CATTFAN\\Desktop\\laptrinhwinform\\A\\QuanLyChanNuoi\\QuanLyChanNuoi\\User case Admin\\FormQuanLyVatTu.cs [Design]",
+              "RelativeToolTip": "User case Admin\\FormQuanLyVatTu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T06:03:52.66Z"
             }
           ]
         }

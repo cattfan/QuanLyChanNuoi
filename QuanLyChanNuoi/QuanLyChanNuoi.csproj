@@ -61,11 +61,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="User case Admin\FormChuongVatNuoi.cs">
+    <Compile Include="FormHomeUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User case Admin\FormChuongVatNuoi.Designer.cs">
-      <DependentUpon>FormChuongVatNuoi.cs</DependentUpon>
+    <Compile Include="FormHomeUser.Designer.cs">
+      <DependentUpon>FormHomeUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User case Admin\FormNhaCungCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User case Admin\FormNhaCungCap.Designer.cs">
+      <DependentUpon>FormNhaCungCap.cs</DependentUpon>
     </Compile>
     <Compile Include="User case Admin\FormHoaDon.cs">
       <SubType>Form</SubType>
@@ -85,11 +91,11 @@
     <Compile Include="User case Admin\FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="User case Admin\FormNhaCungCap.cs">
+    <Compile Include="User case Admin\FormChuongNuoi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="User case Admin\FormNhaCungCap.Designer.cs">
-      <DependentUpon>FormNhaCungCap.cs</DependentUpon>
+    <Compile Include="User case Admin\FormChuongNuoi.Designer.cs">
+      <DependentUpon>FormChuongNuoi.cs</DependentUpon>
     </Compile>
     <Compile Include="User case Admin\FormQuanLyNhanVien.cs">
       <SubType>Form</SubType>
@@ -124,17 +130,23 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormBaoCao.rdlc" />
-    <EmbeddedResource Include="User case Admin\FormChuongVatNuoi.resx">
-      <DependentUpon>FormChuongVatNuoi.cs</DependentUpon>
+    <EmbeddedResource Include="FormHomeUser.resx">
+      <DependentUpon>FormHomeUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User case Admin\FormNhaCungCap.resx">
+      <DependentUpon>FormNhaCungCap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User case Admin\FormHoaDon.resx">
       <DependentUpon>FormHoaDon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="User case Admin\FormHomeAdmin.resx">
+      <DependentUpon>FormHomeAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User case Admin\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User case Admin\FormNhaCungCap.resx">
-      <DependentUpon>FormNhaCungCap.cs</DependentUpon>
+    <EmbeddedResource Include="User case Admin\FormChuongNuoi.resx">
+      <DependentUpon>FormChuongNuoi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User case Admin\FormQuanLyNhanVien.resx">
       <DependentUpon>FormQuanLyNhanVien.cs</DependentUpon>
@@ -153,6 +165,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -171,6 +184,42 @@
   <ItemGroup>
     <Folder Include="User case Nhan Vien\" />
     <Folder Include="User case Quan Ly\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Icon\icons8-log-out-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Icon\icons8-avatar-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Icon\icons8-mail-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Icon\icons8-update-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Icon\icons8-growth-chart-53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Icon\icons8-invoice-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Icon\hop1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Icon\icons8-user-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Icon\icons8-group-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Icon\Screenshot 2025-05-23 162923.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\Icon\icons8-barn-50.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

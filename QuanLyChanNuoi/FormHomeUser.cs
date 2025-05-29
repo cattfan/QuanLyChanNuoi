@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace QuanLyChanNuoi
 {
-    public partial class FormChuongVatNuoi : Form
+    public partial class FormHomeUser : Form
     {
-        public FormChuongVatNuoi()
+        public FormHomeUser()
         {
             InitializeComponent();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label1.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
         }
     }
 }
