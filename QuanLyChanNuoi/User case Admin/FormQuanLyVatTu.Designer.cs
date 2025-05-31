@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormQuanLyVatTu));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.chứcNăngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.thêmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sưaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.xóaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sưaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tsThoat = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -84,26 +85,26 @@
             // thêmToolStripMenuItem
             // 
             this.thêmToolStripMenuItem.Name = "thêmToolStripMenuItem";
-            this.thêmToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.thêmToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.thêmToolStripMenuItem.Text = "Thêm";
-            // 
-            // sưaToolStripMenuItem
-            // 
-            this.sưaToolStripMenuItem.Name = "sưaToolStripMenuItem";
-            this.sưaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.sưaToolStripMenuItem.Text = "Sửa";
             // 
             // xóaToolStripMenuItem
             // 
             this.xóaToolStripMenuItem.Name = "xóaToolStripMenuItem";
-            this.xóaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.xóaToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.xóaToolStripMenuItem.Text = "Xóa";
+            // 
+            // sưaToolStripMenuItem
+            // 
+            this.sưaToolStripMenuItem.Name = "sưaToolStripMenuItem";
+            this.sưaToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
+            this.sưaToolStripMenuItem.Text = "Sửa";
             // 
             // tsThoat
             // 
             this.tsThoat.Name = "tsThoat";
             this.tsThoat.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.tsThoat.Size = new System.Drawing.Size(180, 22);
+            this.tsThoat.Size = new System.Drawing.Size(147, 22);
             this.tsThoat.Text = "Thoát";
             // 
             // groupBox1
@@ -309,9 +310,10 @@
             this.Controls.Add(this.dvgVattu);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormQuanLyVatTu";
-            this.Text = "FormQuanLyVatTu";
+            this.Text = "Quản lý vật tư";
             this.Load += new System.EventHandler(this.FormQuanLyVatTu_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

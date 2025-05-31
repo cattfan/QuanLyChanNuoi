@@ -50,6 +50,7 @@
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -129,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User case Admin\FormHoaDon.resx">
       <DependentUpon>FormHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User case Admin\FormHomeAdmin.resx">
+      <DependentUpon>FormHomeAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User case Admin\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
