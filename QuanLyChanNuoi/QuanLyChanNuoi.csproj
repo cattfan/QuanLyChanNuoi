@@ -81,9 +81,11 @@
     </Compile>
     <Compile Include="User case Admin\FormHomeAdmin.cs">
       <SubType>Form</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="User case Admin\FormHomeAdmin.Designer.cs">
       <DependentUpon>FormHomeAdmin.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Compile>
     <Compile Include="User case Admin\FormLogin.cs">
       <SubType>Form</SubType>
@@ -141,6 +143,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User case Admin\FormHomeAdmin.resx">
       <DependentUpon>FormHomeAdmin.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="User case Admin\FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
