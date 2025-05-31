@@ -16,7 +16,7 @@ namespace QuanLyChanNuoi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormHomeUser());
+            Application.Run(new FormLogin());
         }
     }
 }
