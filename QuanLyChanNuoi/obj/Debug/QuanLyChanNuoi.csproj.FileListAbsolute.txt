@@ -73,3 +73,31 @@ D:\bt\vs\báo cáo\QuanLyChanNuoi\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.pdb
 D:\bt\vs\báo cáo\QuanLyChanNuoi\QuanLyChanNuoi\bin\Debug\User case Admin\FormHomeAdmin.resx
 D:\bt\vs\báo cáo\QuanLyChanNuoi\QuanLyChanNuoi\bin\Debug\User case Admin\FormHomeAdmin.cs
 D:\bt\vs\báo cáo\QuanLyChanNuoi\QuanLyChanNuoi\bin\Debug\User case Admin\FormHomeAdmin.Designer.cs
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\bin\Debug\User case Admin\FormHomeAdmin.resx
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\bin\Debug\User case Admin\FormHomeAdmin.cs
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\bin\Debug\User case Admin\FormHomeAdmin.Designer.cs
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\bin\Debug\QuanLyChanNuoi.exe.config
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\bin\Debug\QuanLyChanNuoi.exe
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\bin\Debug\QuanLyChanNuoi.pdb
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\bin\Debug\EntityFramework.dll
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\bin\Debug\EntityFramework.SqlServer.dll
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\bin\Debug\System.Data.SqlClient.dll
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\bin\Debug\EntityFramework.xml
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\bin\Debug\EntityFramework.SqlServer.xml
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\bin\Debug\System.Data.SqlClient.xml
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.csproj.AssemblyReference.cache
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.FormHomeUser.resources
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.FormNhaCungCap.resources
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.FormHoaDon.resources
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.FormHomeAdmin.resources
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.FormLogin.resources
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.FormChuongNuoi.resources
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.FormQuanLyNhanVien.resources
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.FormQuanLyVatTu.resources
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.FormVatNuoi.resources
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.Properties.Resources.resources
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.csproj.GenerateResource.cache
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.csproj.CoreCompileInputs.cache
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\obj\Debug\QuanLyCh.8B9CF1D4.Up2Date
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.exe
+D:\Code\DoAnWinFrom\QuanLyChanNuoi\obj\Debug\QuanLyChanNuoi.pdb
