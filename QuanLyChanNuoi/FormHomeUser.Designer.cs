@@ -37,13 +37,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -119,42 +119,6 @@
             this.panel1.Size = new System.Drawing.Size(106, 560);
             this.panel1.TabIndex = 10;
             // 
-            // button7
-            // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Image = global::QuanLyChanNuoi.Properties.Resources.hop1;
-            this.button7.Location = new System.Drawing.Point(564, 88);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(190, 141);
-            this.button7.TabIndex = 14;
-            this.button7.Text = "Quản lý vật tư";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Image = global::QuanLyChanNuoi.Properties.Resources.icons8_invoice_64;
-            this.button6.Location = new System.Drawing.Point(348, 88);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(190, 141);
-            this.button6.TabIndex = 13;
-            this.button6.Text = "Tạo hóa đơn";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::QuanLyChanNuoi.Properties.Resources.icons8_barn_50;
-            this.button2.Location = new System.Drawing.Point(131, 88);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(190, 141);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Quản lý chuồng trại";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
-            // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Green;
@@ -219,6 +183,42 @@
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.button1.UseVisualStyleBackColor = false;
             // 
+            // button7
+            // 
+            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button7.Image = global::QuanLyChanNuoi.Properties.Resources.hop1;
+            this.button7.Location = new System.Drawing.Point(564, 88);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(190, 141);
+            this.button7.TabIndex = 14;
+            this.button7.Text = "Quản lý vật tư";
+            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button7.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.Image = global::QuanLyChanNuoi.Properties.Resources.icons8_invoice_64;
+            this.button6.Location = new System.Drawing.Point(348, 88);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(190, 141);
+            this.button6.TabIndex = 13;
+            this.button6.Text = "Tạo hóa đơn";
+            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::QuanLyChanNuoi.Properties.Resources.icons8_barn_50;
+            this.button2.Location = new System.Drawing.Point(131, 88);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(190, 141);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "Quản lý chuồng trại";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // FormHomeUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -231,6 +231,7 @@
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormHomeUser";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Trang chủ";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();

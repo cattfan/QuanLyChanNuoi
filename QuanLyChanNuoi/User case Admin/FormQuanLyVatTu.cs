@@ -44,5 +44,20 @@ namespace QuanLyChanNuoi
                 dvgVattu.Rows[index].Cells[4].Value = item.TrangThai;
             }
         }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
