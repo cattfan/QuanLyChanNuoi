@@ -226,6 +226,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="img\Icon\icons8-shop-64.png" />
+    <None Include="img\Icon\pawprint.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

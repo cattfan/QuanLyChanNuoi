@@ -50,7 +50,6 @@ namespace QuanLyChanNuoi
                 dvgVattu.Rows[index].Cells[1].Value = item.TenVatTu;
                 dvgVattu.Rows[index].Cells[2].Value = item.DonViTinh;
                 dvgVattu.Rows[index].Cells[3].Value = item.SoLuong;
-                // Determine TrangThai based on SoLuong
                 dvgVattu.Rows[index].Cells[4].Value = item.SoLuong > 0 ? "Còn hàng" : "Hết hàng";
             }
         }
@@ -59,9 +58,6 @@ namespace QuanLyChanNuoi
         {
             using (LiveStockContextDB context = new LiveStockContextDB())
             {
-                // Assuming you have a distinct list of DonViTinh in your VatTu table
-                // or a separate table for DonViTinh if it's a fixed list.
-                // For simplicity, we'll get distinct DonViTinh from existing VatTus.
                 var donViTinhs = context.VatTus.Select(vt => vt.DonViTinh).Distinct().ToList();
                 ccbDonViTinh.DataSource = donViTinhs;
             }
@@ -71,7 +67,7 @@ namespace QuanLyChanNuoi
         {
             txtMaVatTu.Text = "";
             txtTenVatTu.Text = "";
-            ccbDonViTinh.SelectedIndex = -1; // Clear selection
+            ccbDonViTinh.SelectedIndex = -1;
             txtSoLuong.Text = "";
         }
 
@@ -81,14 +77,11 @@ namespace QuanLyChanNuoi
             {
                 using (LiveStockContextDB context = new LiveStockContextDB())
                 {
-                    // Check if MaVatTu is empty
                     if (string.IsNullOrWhiteSpace(txtMaVatTu.Text))
                     {
                         MessageBox.Show("Mã vật tư không được để trống.", "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
-
-                    // Check if a material with the same MaVatTu already exists
                     if (context.VatTus.Any(vt => vt.MaVatTu == txtMaVatTu.Text))
                     {
                         MessageBox.Show("Mã vật tư này đã tồn tại. Vui lòng nhập mã khác.", "Trùng mã vật tư", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -98,14 +91,14 @@ namespace QuanLyChanNuoi
                     VatTu newVatTu = new VatTu();
                     newVatTu.MaVatTu = txtMaVatTu.Text;
                     newVatTu.TenVatTu = txtTenVatTu.Text;
-                    newVatTu.DonViTinh = ccbDonViTinh.SelectedItem?.ToString(); // Get selected item from ComboBox
+                    newVatTu.DonViTinh = ccbDonViTinh.SelectedItem?.ToString(); 
                     if (string.IsNullOrWhiteSpace(txtSoLuong.Text) || !int.TryParse(txtSoLuong.Text, out int soLuong))
                     {
                         MessageBox.Show("Số lượng phải là một số nguyên hợp lệ.", "Lỗi nhập liệu", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
                     newVatTu.SoLuong = soLuong;
-                    newVatTu.TrangThai = newVatTu.SoLuong > 0 ? "Còn hàng" : "Hết hàng"; // Set TrangThai based on SoLuong
+                    newVatTu.TrangThai = newVatTu.SoLuong > 0 ? "Còn hàng" : "Hết hàng"; 
 
                     context.VatTus.Add(newVatTu);
                     context.SaveChanges();
@@ -211,7 +204,7 @@ namespace QuanLyChanNuoi
                 DataGridViewRow row = dvgVattu.Rows[e.RowIndex];
                 txtMaVatTu.Text = row.Cells[0].Value?.ToString();
                 txtTenVatTu.Text = row.Cells[1].Value?.ToString();
-                ccbDonViTinh.SelectedItem = row.Cells[2].Value?.ToString(); // Set selected item in ComboBox
+                ccbDonViTinh.SelectedItem = row.Cells[2].Value?.ToString();
                 txtSoLuong.Text = row.Cells[3].Value?.ToString();
             }
         }
