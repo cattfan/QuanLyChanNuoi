@@ -12,17 +12,17 @@ namespace QuanLyChanNuoi.Models
         {
         }
 
-        public virtual DbSet<ChiTietHoaDon> ChiTietHoaDons { get; set; }
-        public virtual DbSet<ChucVuNhanVien> ChucVuNhanViens { get; set; }
-        public virtual DbSet<ChuongVatNuoi> ChuongVatNuois { get; set; }
-        public virtual DbSet<HoaDon> HoaDons { get; set; }
+        public virtual DbSet<ChiTietHoaDon> ChiTietHoaDon { get; set; }
+        public virtual DbSet<ChucVuNhanVien> ChucVuNhanVien { get; set; }
+        public virtual DbSet<ChuongVatNuoi> ChuongVatNuoi { get; set; }
+        public virtual DbSet<HoaDon> HoaDon { get; set; }
         public virtual DbSet<Log_LichSuChuong> Log_LichSuChuong { get; set; }
-        public virtual DbSet<NhaCungCap> NhaCungCaps { get; set; }
+        public virtual DbSet<NhaCungCap> NhaCungCap { get; set; }
         public virtual DbSet<NhaCungCap_VatTu> NhaCungCap_VatTu { get; set; }
-        public virtual DbSet<NhanVien> NhanViens { get; set; }
-        public virtual DbSet<ToNhanVien> ToNhanViens { get; set; }
-        public virtual DbSet<VatNuoi> VatNuois { get; set; }
-        public virtual DbSet<VatTu> VatTus { get; set; }
+        public virtual DbSet<NhanVien> NhanVien { get; set; }
+        public virtual DbSet<ToNhanVien> ToNhanVien { get; set; }
+        public virtual DbSet<VatNuoi> VatNuoi { get; set; }
+        public virtual DbSet<VatTu> VatTu { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -59,7 +59,7 @@ namespace QuanLyChanNuoi.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<HoaDon>()
-                .HasMany(e => e.ChiTietHoaDons)
+                .HasMany(e => e.ChiTietHoaDon)
                 .WithRequired(e => e.HoaDon)
                 .WillCascadeOnDelete(false);
 
@@ -109,8 +109,8 @@ namespace QuanLyChanNuoi.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<NhanVien>()
-                .HasMany(e => e.VatNuois)
-                .WithMany(e => e.NhanViens)
+                .HasMany(e => e.VatNuoi)
+                .WithMany(e => e.NhanVien)
                 .Map(m => m.ToTable("NhanVien_VatNuoi").MapLeftKey("MaNhanVien").MapRightKey("MaVatNuoi"));
 
             modelBuilder.Entity<ToNhanVien>()

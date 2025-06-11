@@ -12,7 +12,7 @@ namespace QuanLyChanNuoi.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public ChuongVatNuoi()
         {
-            VatNuois = new HashSet<VatNuoi>();
+            VatNuoi = new HashSet<VatNuoi>();
         }
 
         [Key]
@@ -25,6 +25,6 @@ namespace QuanLyChanNuoi.Models
         public decimal? DienTich { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<VatNuoi> VatNuois { get; set; }
+        public virtual ICollection<VatNuoi> VatNuoi { get; set; }
     }
 }

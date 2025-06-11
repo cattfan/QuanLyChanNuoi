@@ -16,5 +16,10 @@ namespace QuanLyChanNuoi
         {
             InitializeComponent();
         }
+
+        private void FormVatNuoi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

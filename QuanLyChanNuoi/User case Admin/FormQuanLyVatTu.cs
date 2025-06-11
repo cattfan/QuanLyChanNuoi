@@ -23,7 +23,7 @@ namespace QuanLyChanNuoi
             try
             {
                 LiveStockContextDB context = new LiveStockContextDB();
-                List<VatTu> listVattu = context.VatTus.ToList();
+                List<VatTu> listVattu = context.VatTu.ToList();
                 BindGrid(listVattu);
             }
             catch (Exception ex)

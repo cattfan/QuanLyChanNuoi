@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyChanNuoi.User_case_Admin;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -48,13 +49,16 @@ namespace QuanLyChanNuoi
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Hide(); // Ẩn form admin trước khi mở form vật nuôi
+            FormBaocaothongke formbaocao = new FormBaocaothongke();
+            formbaocao.FormClosed += (s, args) => this.Show(); // Hiển thị lại form admin khi form nhân viên đóng
+            formbaocao.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             this.Hide(); // Ẩn form admin trước khi mở form báo cáo
-            FormHoaDon formHoaDon = new FormHoaDon();
+            FormNhaphoadon formHoaDon = new FormNhaphoadon();
             formHoaDon.FormClosed += (s, args) => this.Show(); // Hiển thị lại form admin khi form báo cáo đóng
             formHoaDon.Show();
         }
@@ -83,6 +87,16 @@ namespace QuanLyChanNuoi
         private void button5_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Đã ở phiên bản mới nhất", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void FormHomeAdmin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -16,5 +16,10 @@ namespace QuanLyChanNuoi
         {
             InitializeComponent();
         }
+
+        private void FormNhaCungCap_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
