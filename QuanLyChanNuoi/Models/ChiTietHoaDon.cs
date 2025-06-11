@@ -40,10 +40,5 @@ namespace QuanLyChanNuoi.Models
         public virtual NhanVien NhanVien { get; set; }
 
         public virtual NhaCungCap NhaCungCap { get; set; }
-
-        [ForeignKey("MaMatHang")]
-        public virtual VatTu VatTu { get; set; }
-        
-        
     }
 }

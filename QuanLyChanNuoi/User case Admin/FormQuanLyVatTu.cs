@@ -24,7 +24,7 @@ namespace QuanLyChanNuoi
             {
 <<<<<<< HEAD
                 LiveStockContextDB context = new LiveStockContextDB();
-                List<VatTu> listVattu = context.VatTu.ToList();
+                List<VatTu> listVattu = context.VatTus.ToList();
                 BindGrid(listVattu);
 =======
                 LoadDataIntoDataGridView();

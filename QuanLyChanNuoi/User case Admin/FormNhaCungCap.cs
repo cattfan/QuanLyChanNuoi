@@ -19,12 +19,13 @@ namespace QuanLyChanNuoi
         {
             InitializeComponent();
         }
+ 
 
         private void FormNhaCungCap_Load(object sender, EventArgs e)
         {
-<<<<<<< HEAD
+ 
 
-=======
+ 
             LoadNhaCungCap();
             ClearInputFields(); 
         }
@@ -212,7 +213,9 @@ namespace QuanLyChanNuoi
                                  .ToList();
 
             BindGrid(filteredList);
->>>>>>> main
+ 
         }
+ 
+ 
     }
 }

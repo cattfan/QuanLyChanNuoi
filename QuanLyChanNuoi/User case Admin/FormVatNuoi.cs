@@ -21,11 +21,11 @@ namespace QuanLyChanNuoi
             InitializeComponent();
         }
 
+
         private void FormVatNuoi_Load(object sender, EventArgs e)
         {
-<<<<<<< HEAD
 
-=======
+
             LoadVatNuoi();
             LoadComboBoxes();
             ClearInputFields();
@@ -271,7 +271,7 @@ namespace QuanLyChanNuoi
                                  .ToList();
 
             BindGrid(filteredList);
->>>>>>> main
         }
+
     }
 }
