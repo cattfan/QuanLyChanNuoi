@@ -29,17 +29,17 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormNhaCungCap));
-            this.dvgVattu = new System.Windows.Forms.DataGridView();
+            this.dgvNhaCungCap = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.tsThoat = new System.Windows.Forms.ToolStripMenuItem();
             this.xóaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.txtSoLuong = new System.Windows.Forms.TextBox();
-            this.txtTenVatTu = new System.Windows.Forms.TextBox();
-            this.txtMaVatTu = new System.Windows.Forms.TextBox();
+            this.txtDiaChiNhaCungCap = new System.Windows.Forms.TextBox();
+            this.txtTenNhaCungCap = new System.Windows.Forms.TextBox();
+            this.txtMaNhaCungCap = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -52,24 +52,34 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            ((System.ComponentModel.ISupportInitialize)(this.dvgVattu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNhaCungCap)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dvgVattu
+            // dgvNhaCungCap
             // 
-            this.dvgVattu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgVattu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvNhaCungCap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvNhaCungCap.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
+<<<<<<< HEAD
             this.dvgVattu.Location = new System.Drawing.Point(16, 222);
             this.dvgVattu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dvgVattu.Name = "dvgVattu";
             this.dvgVattu.RowHeadersWidth = 51;
             this.dvgVattu.Size = new System.Drawing.Size(1013, 462);
             this.dvgVattu.TabIndex = 6;
+=======
+            this.dgvNhaCungCap.Location = new System.Drawing.Point(16, 222);
+            this.dgvNhaCungCap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvNhaCungCap.Name = "dgvNhaCungCap";
+            this.dgvNhaCungCap.RowHeadersWidth = 51;
+            this.dgvNhaCungCap.Size = new System.Drawing.Size(1013, 462);
+            this.dgvNhaCungCap.TabIndex = 6;
+            this.dgvNhaCungCap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhaCungCap_CellClick);
+>>>>>>> main
             // 
             // Column1
             // 
@@ -92,13 +102,22 @@
             this.Column3.MinimumWidth = 6;
             this.Column3.Name = "Column3";
             // 
-            // textBox1
+            // txtTimKiem
             // 
+<<<<<<< HEAD
             this.textBox1.Location = new System.Drawing.Point(127, 137);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(339, 30);
             this.textBox1.TabIndex = 14;
+=======
+            this.txtTimKiem.Location = new System.Drawing.Point(127, 137);
+            this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(339, 30);
+            this.txtTimKiem.TabIndex = 14;
+            this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
+>>>>>>> main
             // 
             // label5
             // 
@@ -125,29 +144,53 @@
             this.xóaToolStripMenuItem.Size = new System.Drawing.Size(183, 26);
             this.xóaToolStripMenuItem.Text = "Xóa";
             // 
-            // txtSoLuong
+            // txtDiaChiNhaCungCap
             // 
+<<<<<<< HEAD
             this.txtSoLuong.Location = new System.Drawing.Point(653, 31);
             this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSoLuong.Name = "txtSoLuong";
             this.txtSoLuong.Size = new System.Drawing.Size(339, 30);
             this.txtSoLuong.TabIndex = 7;
+=======
+            this.txtDiaChiNhaCungCap.Location = new System.Drawing.Point(653, 31);
+            this.txtDiaChiNhaCungCap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDiaChiNhaCungCap.Name = "txtDiaChiNhaCungCap";
+            this.txtDiaChiNhaCungCap.Size = new System.Drawing.Size(339, 30);
+            this.txtDiaChiNhaCungCap.TabIndex = 7;
+>>>>>>> main
             // 
-            // txtTenVatTu
+            // txtTenNhaCungCap
             // 
+<<<<<<< HEAD
             this.txtTenVatTu.Location = new System.Drawing.Point(216, 70);
             this.txtTenVatTu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTenVatTu.Name = "txtTenVatTu";
             this.txtTenVatTu.Size = new System.Drawing.Size(339, 30);
             this.txtTenVatTu.TabIndex = 5;
+=======
+            this.txtTenNhaCungCap.Location = new System.Drawing.Point(216, 70);
+            this.txtTenNhaCungCap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenNhaCungCap.Name = "txtTenNhaCungCap";
+            this.txtTenNhaCungCap.Size = new System.Drawing.Size(339, 30);
+            this.txtTenNhaCungCap.TabIndex = 5;
+>>>>>>> main
             // 
-            // txtMaVatTu
+            // txtMaNhaCungCap
             // 
+<<<<<<< HEAD
             this.txtMaVatTu.Location = new System.Drawing.Point(216, 31);
             this.txtMaVatTu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMaVatTu.Name = "txtMaVatTu";
             this.txtMaVatTu.Size = new System.Drawing.Size(339, 30);
             this.txtMaVatTu.TabIndex = 4;
+=======
+            this.txtMaNhaCungCap.Location = new System.Drawing.Point(216, 31);
+            this.txtMaNhaCungCap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaNhaCungCap.Name = "txtMaNhaCungCap";
+            this.txtMaNhaCungCap.Size = new System.Drawing.Size(339, 30);
+            this.txtMaNhaCungCap.TabIndex = 4;
+>>>>>>> main
             // 
             // label4
             // 
@@ -213,11 +256,11 @@
             this.groupBox1.Controls.Add(this.btnThoat);
             this.groupBox1.Controls.Add(this.btnXoa);
             this.groupBox1.Controls.Add(this.btnThem);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.txtTimKiem);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.txtSoLuong);
-            this.groupBox1.Controls.Add(this.txtTenVatTu);
-            this.groupBox1.Controls.Add(this.txtMaVatTu);
+            this.groupBox1.Controls.Add(this.txtDiaChiNhaCungCap);
+            this.groupBox1.Controls.Add(this.txtTenNhaCungCap);
+            this.groupBox1.Controls.Add(this.txtMaNhaCungCap);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
@@ -243,6 +286,7 @@
             this.btnSua.TabIndex = 18;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnThoat
             // 
@@ -256,6 +300,7 @@
             this.btnThoat.TabIndex = 17;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // btnXoa
             // 
@@ -269,6 +314,7 @@
             this.btnXoa.TabIndex = 16;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
@@ -282,6 +328,7 @@
             this.btnThem.TabIndex = 15;
             this.btnThem.Text = "Thêm";
             this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // menuStrip1
             // 
@@ -300,7 +347,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1045, 690);
+<<<<<<< HEAD
             this.Controls.Add(this.dvgVattu);
+=======
+            this.Controls.Add(this.dgvNhaCungCap);
+>>>>>>> main
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -309,7 +360,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nhà cung cấp";
             this.Load += new System.EventHandler(this.FormNhaCungCap_Load);
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.dvgVattu)).EndInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.dgvNhaCungCap)).EndInit();
+>>>>>>> main
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -320,14 +375,14 @@
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dvgVattu;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.DataGridView dgvNhaCungCap;
+        private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ToolStripMenuItem tsThoat;
         private System.Windows.Forms.ToolStripMenuItem xóaToolStripMenuItem;
-        private System.Windows.Forms.TextBox txtSoLuong;
-        private System.Windows.Forms.TextBox txtTenVatTu;
-        private System.Windows.Forms.TextBox txtMaVatTu;
+        private System.Windows.Forms.TextBox txtDiaChiNhaCungCap;
+        private System.Windows.Forms.TextBox txtTenNhaCungCap;
+        private System.Windows.Forms.TextBox txtMaNhaCungCap;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;

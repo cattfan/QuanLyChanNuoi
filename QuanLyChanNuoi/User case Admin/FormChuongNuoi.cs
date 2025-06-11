@@ -190,5 +190,33 @@ namespace QuanLyChanNuoi
             txtVitri.Clear();
             txtDientich.Clear();
         }
+
+        private void txtTimkiem_TextChanged(object sender, EventArgs e)
+        {
+            string keyword = txtTimkiem.Text.Trim();
+
+            try
+            {
+                List<ChuongVatNuoi> searchResults;
+
+                if (string.IsNullOrWhiteSpace(keyword))
+                {
+                    // If search box is empty, load all
+                    searchResults = db.ChuongVatNuois.ToList();
+                }
+                else
+                {
+                    // Search by ViTri (Khu)
+                    searchResults = db.ChuongVatNuois
+                                      .Where(c => c.ViTri.Contains(keyword))
+                                      .ToList();
+                }
+                BindGrid(searchResults);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tìm kiếm: " + ex.Message);
+            }
+        }
     }
 }

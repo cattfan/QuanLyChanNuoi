@@ -24,6 +24,7 @@ namespace QuanLyChanNuoi.Models
         public virtual DbSet<VatNuoi> VatNuoi { get; set; }
         public virtual DbSet<VatTu> VatTu { get; set; }
 
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<ChiTietHoaDon>()

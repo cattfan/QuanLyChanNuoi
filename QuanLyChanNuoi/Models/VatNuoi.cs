@@ -30,7 +30,7 @@ namespace QuanLyChanNuoi.Models
         [StringLength(10)]
         public string MaChuong { get; set; }
 
-        public virtual ChuongVatNuoi ChuongVatNuoi { get; set; }
+        public virtual ChuongVatNuoi ChuongVatNuois { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<NhanVien> NhanVien { get; set; }

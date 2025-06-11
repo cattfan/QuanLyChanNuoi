@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Windows.Forms;
-
+using System.Data.Entity; 
 namespace QuanLyChanNuoi
 {
     public partial class FormQuanLyNhanVien : Form
@@ -27,7 +27,14 @@ namespace QuanLyChanNuoi
         {
             try
             {
+<<<<<<< HEAD
                 List<NhanVien> danhSach = db.NhanVien.ToList();
+=======
+                List<NhanVien> danhSach = db.NhanViens
+                                            .Include(nv => nv.ToNhanVien)
+                                            .Include(nv => nv.ChucVuNhanVien)
+                                            .ToList();
+>>>>>>> main
                 BindGrid(danhSach);
             }
             catch (Exception ex)
@@ -38,6 +45,7 @@ namespace QuanLyChanNuoi
 
         private void LoadComboBoxes()
         {
+<<<<<<< HEAD
             // Giới tính
             cmbGioiTinh.Items.Clear();
             cmbGioiTinh.Items.Add("Nam");
@@ -54,6 +62,31 @@ namespace QuanLyChanNuoi
             cmbChucvu.DataSource = dsChucVu;
             cmbChucvu.DisplayMember = "TenChucVu";   // Hiển thị tên chức vụ cho người dùng
             cmbChucvu.ValueMember = "MaChucVu";      // Lưu mã chức vụ vào DB
+=======
+            cmbGioiTinh.DataSource = new List<string> { "Nam", "Nữ" };
+            try
+            {
+                var danhSachTo = db.ToNhanViens.ToList();
+                cmbMaTo.DataSource = danhSachTo;
+                cmbMaTo.DisplayMember = "MaTo"; 
+                cmbMaTo.ValueMember = "MaTo"; 
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải danh sách Tổ nhân viên: " + ex.Message);
+            }
+            try
+            {
+                var danhSachChucVu = db.ChucVuNhanViens.ToList();
+                cmbChucvu.DataSource = danhSachChucVu;
+                cmbChucvu.DisplayMember = "MaChucVu"; 
+                cmbChucvu.ValueMember = "MaChucVu";   
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi tải danh sách Chức vụ: " + ex.Message);
+            }
+>>>>>>> main
         }
 
 
@@ -67,7 +100,7 @@ namespace QuanLyChanNuoi
                 dvgNhanVien.Rows[index].Cells[1].Value = nv.HoTen;
                 dvgNhanVien.Rows[index].Cells[2].Value = nv.NgaySinh?.ToString("dd/MM/yyyy") ?? "";
                 dvgNhanVien.Rows[index].Cells[3].Value = nv.GioiTinh;
-                dvgNhanVien.Rows[index].Cells[4].Value = nv.MaTo;
+                dvgNhanVien.Rows[index].Cells[4].Value = nv.ToNhanVien?.TenTo ?? nv.MaTo;
                 dvgNhanVien.Rows[index].Cells[5].Value = nv.MaChucVu;
             }
         }
@@ -81,8 +114,32 @@ namespace QuanLyChanNuoi
                 txtHoTen.Text = row.Cells[1].Value?.ToString();
                 dtpNgaySinh.Value = DateTime.TryParse(row.Cells[2].Value?.ToString(), out var date) ? date : DateTime.Now;
                 cmbGioiTinh.Text = row.Cells[3].Value?.ToString();
-                cmbMaTo.Text = row.Cells[4].Value?.ToString();
-                cmbChucvu.Text = row.Cells[5].Value?.ToString();
+                string maToFromGrid = row.Cells[4].Value?.ToString();
+                if (cmbMaTo.DataSource is IList<QuanLyChanNuoi.Models.ToNhanVien> listTo)
+                {
+                    var selectedTo = listTo.FirstOrDefault(t => t.TenTo == maToFromGrid);
+                    if (selectedTo != null)
+                    {
+                        cmbMaTo.SelectedValue = selectedTo.MaTo;
+                    }
+                    else
+                    {
+                        cmbMaTo.SelectedValue = maToFromGrid;
+                    }
+                }
+                else
+                {
+                    cmbMaTo.SelectedValue = maToFromGrid;
+                }
+                string maChucVuFromGrid = row.Cells[5].Value?.ToString();
+                if (!string.IsNullOrEmpty(maChucVuFromGrid))
+                {
+                    cmbChucvu.SelectedValue = maChucVuFromGrid;
+                }
+                else
+                {
+                    cmbChucvu.SelectedIndex = -1;
+                }
             }
         }
 
@@ -107,7 +164,7 @@ namespace QuanLyChanNuoi
                 MaNhanVien = maNV,
                 HoTen = txtHoTen.Text.Trim(),
                 NgaySinh = dtpNgaySinh.Value,
-                GioiTinh = cmbGioiTinh.Text.Trim(),
+                GioiTinh = cmbGioiTinh.Text.Trim(), 
                 MaTo = cmbMaTo.SelectedValue?.ToString(),
                 MaChucVu = cmbChucvu.SelectedValue?.ToString()
             };
@@ -138,7 +195,7 @@ namespace QuanLyChanNuoi
 
             nv.HoTen = txtHoTen.Text.Trim();
             nv.NgaySinh = dtpNgaySinh.Value;
-            nv.GioiTinh = cmbGioiTinh.Text.Trim();
+            nv.GioiTinh = cmbGioiTinh.Text.Trim(); 
             nv.MaTo = cmbMaTo.SelectedValue?.ToString();
             nv.MaChucVu = cmbChucvu.SelectedValue?.ToString();
 
@@ -194,10 +251,16 @@ namespace QuanLyChanNuoi
         private void ClearTextBoxes()
         {
             txtMaNV.Clear();
-            txtHoTen.Clear();
-            cmbGioiTinh.SelectedIndex = -1;
-            cmbMaTo.SelectedIndex = -1;
-            cmbChucvu.SelectedIndex = -1;
+            txtHoTen.Clear(); 
+            if (cmbGioiTinh.Items.Count > 0) cmbGioiTinh.SelectedIndex = 0;
+            else cmbGioiTinh.SelectedIndex = -1;
+
+            if (cmbMaTo.Items.Count > 0) cmbMaTo.SelectedIndex = 0;
+            else cmbMaTo.SelectedIndex = -1;
+
+            if (cmbChucvu.Items.Count > 0) cmbChucvu.SelectedIndex = 0;
+            else cmbChucvu.SelectedIndex = -1;
+
             dtpNgaySinh.Value = DateTime.Now;
         }
 
@@ -207,7 +270,7 @@ namespace QuanLyChanNuoi
 
             var filteredList = db.NhanVien
                                  .Where(nv => nv.MaNhanVien.ToLower().Contains(keyword)
-                                           || nv.HoTen.ToLower().Contains(keyword))
+                                            || nv.HoTen.ToLower().Contains(keyword))
                                  .ToList();
 
             BindGrid(filteredList);

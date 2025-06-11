@@ -89,6 +89,7 @@ namespace QuanLyChanNuoi
             MessageBox.Show("Đã ở phiên bản mới nhất", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+<<<<<<< HEAD
         private void FormHomeAdmin_Load(object sender, EventArgs e)
         {
 
@@ -97,6 +98,14 @@ namespace QuanLyChanNuoi
         private void button3_Click(object sender, EventArgs e)
         {
 
+=======
+        private void button11_Click(object sender, EventArgs e)
+        {
+            this.Hide(); // Ẩn form admin trước khi mở form vật nuôi
+            FormVatNuoi formvatnuoi = new FormVatNuoi();
+            formvatnuoi.FormClosed += (s, args) => this.Show(); // Hiển thị lại form admin khi form nhà cung cấp đóng
+            formvatnuoi.Show();
+>>>>>>> main
         }
     }
 }
