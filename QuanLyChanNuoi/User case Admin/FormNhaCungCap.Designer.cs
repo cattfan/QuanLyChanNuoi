@@ -64,6 +64,14 @@
             this.Column1,
             this.Column2,
             this.Column3});
+<<<<<<< HEAD
+            this.dvgVattu.Location = new System.Drawing.Point(16, 222);
+            this.dvgVattu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dvgVattu.Name = "dvgVattu";
+            this.dvgVattu.RowHeadersWidth = 51;
+            this.dvgVattu.Size = new System.Drawing.Size(1013, 462);
+            this.dvgVattu.TabIndex = 6;
+=======
             this.dgvNhaCungCap.Location = new System.Drawing.Point(16, 222);
             this.dgvNhaCungCap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvNhaCungCap.Name = "dgvNhaCungCap";
@@ -71,6 +79,7 @@
             this.dgvNhaCungCap.Size = new System.Drawing.Size(1013, 462);
             this.dgvNhaCungCap.TabIndex = 6;
             this.dgvNhaCungCap.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvNhaCungCap_CellClick);
+>>>>>>> main
             // 
             // Column1
             // 
@@ -95,12 +104,20 @@
             // 
             // txtTimKiem
             // 
+<<<<<<< HEAD
+            this.textBox1.Location = new System.Drawing.Point(127, 137);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(339, 30);
+            this.textBox1.TabIndex = 14;
+=======
             this.txtTimKiem.Location = new System.Drawing.Point(127, 137);
             this.txtTimKiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(339, 30);
             this.txtTimKiem.TabIndex = 14;
             this.txtTimKiem.TextChanged += new System.EventHandler(this.txtTimKiem_TextChanged);
+>>>>>>> main
             // 
             // label5
             // 
@@ -129,27 +146,51 @@
             // 
             // txtDiaChiNhaCungCap
             // 
+<<<<<<< HEAD
+            this.txtSoLuong.Location = new System.Drawing.Point(653, 31);
+            this.txtSoLuong.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSoLuong.Name = "txtSoLuong";
+            this.txtSoLuong.Size = new System.Drawing.Size(339, 30);
+            this.txtSoLuong.TabIndex = 7;
+=======
             this.txtDiaChiNhaCungCap.Location = new System.Drawing.Point(653, 31);
             this.txtDiaChiNhaCungCap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDiaChiNhaCungCap.Name = "txtDiaChiNhaCungCap";
             this.txtDiaChiNhaCungCap.Size = new System.Drawing.Size(339, 30);
             this.txtDiaChiNhaCungCap.TabIndex = 7;
+>>>>>>> main
             // 
             // txtTenNhaCungCap
             // 
+<<<<<<< HEAD
+            this.txtTenVatTu.Location = new System.Drawing.Point(216, 70);
+            this.txtTenVatTu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTenVatTu.Name = "txtTenVatTu";
+            this.txtTenVatTu.Size = new System.Drawing.Size(339, 30);
+            this.txtTenVatTu.TabIndex = 5;
+=======
             this.txtTenNhaCungCap.Location = new System.Drawing.Point(216, 70);
             this.txtTenNhaCungCap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTenNhaCungCap.Name = "txtTenNhaCungCap";
             this.txtTenNhaCungCap.Size = new System.Drawing.Size(339, 30);
             this.txtTenNhaCungCap.TabIndex = 5;
+>>>>>>> main
             // 
             // txtMaNhaCungCap
             // 
+<<<<<<< HEAD
+            this.txtMaVatTu.Location = new System.Drawing.Point(216, 31);
+            this.txtMaVatTu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaVatTu.Name = "txtMaVatTu";
+            this.txtMaVatTu.Size = new System.Drawing.Size(339, 30);
+            this.txtMaVatTu.TabIndex = 4;
+=======
             this.txtMaNhaCungCap.Location = new System.Drawing.Point(216, 31);
             this.txtMaNhaCungCap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMaNhaCungCap.Name = "txtMaNhaCungCap";
             this.txtMaNhaCungCap.Size = new System.Drawing.Size(339, 30);
             this.txtMaNhaCungCap.TabIndex = 4;
+>>>>>>> main
             // 
             // label4
             // 
@@ -306,7 +347,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(240)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1045, 690);
+<<<<<<< HEAD
+            this.Controls.Add(this.dvgVattu);
+=======
             this.Controls.Add(this.dgvNhaCungCap);
+>>>>>>> main
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -315,7 +360,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nhà cung cấp";
             this.Load += new System.EventHandler(this.FormNhaCungCap_Load);
+<<<<<<< HEAD
+            ((System.ComponentModel.ISupportInitialize)(this.dvgVattu)).EndInit();
+=======
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhaCungCap)).EndInit();
+>>>>>>> main
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);

@@ -25,7 +25,7 @@ namespace QuanLyChanNuoi
         {
             try
             {
-                List<ChuongVatNuoi> danhSachChuong = db.ChuongVatNuois.ToList();
+                List<ChuongVatNuoi> danhSachChuong = db.ChuongVatNuoi.ToList();
                 BindGrid(danhSachChuong);
             }
             catch (Exception ex)
@@ -73,7 +73,7 @@ namespace QuanLyChanNuoi
 
             // Kiểm tra Mã chuồng đã tồn tại chưa
             string maChuong = txtMachuong.Text.Trim();
-            var existing = db.ChuongVatNuois.Find(maChuong);
+            var existing = db.ChuongVatNuoi.Find(maChuong);
             if (existing != null)
             {
                 MessageBox.Show("Mã chuồng đã tồn tại. Vui lòng nhập mã khác.");
@@ -96,7 +96,7 @@ namespace QuanLyChanNuoi
 
             try
             {
-                db.ChuongVatNuois.Add(chuong);
+                db.ChuongVatNuoi.Add(chuong);
                 db.SaveChanges();
                 MessageBox.Show("Thêm chuồng mới thành công.");
                 LoadChuong();
@@ -117,7 +117,7 @@ namespace QuanLyChanNuoi
             }
 
             string maChuong = txtMachuong.Text.Trim();
-            var chuong = db.ChuongVatNuois.Find(maChuong);
+            var chuong = db.ChuongVatNuoi.Find(maChuong);
             if (chuong == null)
             {
                 MessageBox.Show("Không tìm thấy chuồng để sửa.");
@@ -159,11 +159,11 @@ namespace QuanLyChanNuoi
             if (confirm == DialogResult.No) return;
 
             string maChuong = dvgChuongnuoi.SelectedRows[0].Cells[0].Value.ToString();
-            var chuong = db.ChuongVatNuois.Find(maChuong);
+            var chuong = db.ChuongVatNuoi.Find(maChuong);
 
             if (chuong != null)
             {
-                db.ChuongVatNuois.Remove(chuong);
+                db.ChuongVatNuoi.Remove(chuong);
                 try
                 {
                     db.SaveChanges();

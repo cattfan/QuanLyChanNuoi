@@ -12,8 +12,8 @@ namespace QuanLyChanNuoi.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public NhanVien()
         {
-            ChiTietHoaDons = new HashSet<ChiTietHoaDon>();
-            VatNuois = new HashSet<VatNuoi>();
+            ChiTietHoaDon = new HashSet<ChiTietHoaDon>();
+            VatNuoi = new HashSet<VatNuoi>();
         }
 
         [Key]
@@ -36,13 +36,13 @@ namespace QuanLyChanNuoi.Models
         public string MaChucVu { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ChiTietHoaDon> ChiTietHoaDons { get; set; }
+        public virtual ICollection<ChiTietHoaDon> ChiTietHoaDon { get; set; }
 
         public virtual ChucVuNhanVien ChucVuNhanVien { get; set; }
 
         public virtual ToNhanVien ToNhanVien { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<VatNuoi> VatNuois { get; set; }
+        public virtual ICollection<VatNuoi> VatNuoi { get; set; }
     }
 }

@@ -1,0 +1,8 @@
+# Visual Studio auto-generated files
+.vs/
+[Oo]bj/
+[Bb]in/
+
+# User-specific files
+*.suo
+*.user

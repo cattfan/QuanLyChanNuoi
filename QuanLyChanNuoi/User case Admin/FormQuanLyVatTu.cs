@@ -22,8 +22,14 @@ namespace QuanLyChanNuoi
         {
             try
             {
+<<<<<<< HEAD
+                LiveStockContextDB context = new LiveStockContextDB();
+                List<VatTu> listVattu = context.VatTu.ToList();
+                BindGrid(listVattu);
+=======
                 LoadDataIntoDataGridView();
                 LoadDonViTinhComboBox();
+>>>>>>> main
             }
             catch (Exception ex)
             {

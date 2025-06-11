@@ -27,10 +27,14 @@ namespace QuanLyChanNuoi
         {
             try
             {
+<<<<<<< HEAD
+                List<NhanVien> danhSach = db.NhanVien.ToList();
+=======
                 List<NhanVien> danhSach = db.NhanViens
                                             .Include(nv => nv.ToNhanVien)
                                             .Include(nv => nv.ChucVuNhanVien)
                                             .ToList();
+>>>>>>> main
                 BindGrid(danhSach);
             }
             catch (Exception ex)
@@ -41,6 +45,24 @@ namespace QuanLyChanNuoi
 
         private void LoadComboBoxes()
         {
+<<<<<<< HEAD
+            // Giới tính
+            cmbGioiTinh.Items.Clear();
+            cmbGioiTinh.Items.Add("Nam");
+            cmbGioiTinh.Items.Add("Nữ");
+            cmbGioiTinh.SelectedIndex = 0;
+
+            // Mã tổ
+            cmbMaTo.DataSource = db.ToNhanVien.ToList();
+            cmbMaTo.DisplayMember = "MaTo";   // Nếu muốn hiển thị tên tổ thì sửa thành "TenTo"
+            cmbMaTo.ValueMember = "MaTo";
+
+            // Chức vụ
+            var dsChucVu = db.ChucVuNhanVien.ToList();
+            cmbChucvu.DataSource = dsChucVu;
+            cmbChucvu.DisplayMember = "TenChucVu";   // Hiển thị tên chức vụ cho người dùng
+            cmbChucvu.ValueMember = "MaChucVu";      // Lưu mã chức vụ vào DB
+=======
             cmbGioiTinh.DataSource = new List<string> { "Nam", "Nữ" };
             try
             {
@@ -64,6 +86,7 @@ namespace QuanLyChanNuoi
             {
                 MessageBox.Show("Lỗi khi tải danh sách Chức vụ: " + ex.Message);
             }
+>>>>>>> main
         }
 
 
@@ -129,7 +152,7 @@ namespace QuanLyChanNuoi
             }
 
             string maNV = txtMaNV.Text.Trim();
-            var existing = db.NhanViens.Find(maNV);
+            var existing = db.NhanVien.Find(maNV);
             if (existing != null)
             {
                 MessageBox.Show("Mã nhân viên đã tồn tại.");
@@ -148,7 +171,7 @@ namespace QuanLyChanNuoi
 
             try
             {
-                db.NhanViens.Add(nv);
+                db.NhanVien.Add(nv);
                 db.SaveChanges();
                 MessageBox.Show("Thêm nhân viên thành công.");
                 LoadNhanVien();
@@ -163,7 +186,7 @@ namespace QuanLyChanNuoi
         private void btnSua_Click(object sender, EventArgs e)
         {
             string maNV = txtMaNV.Text.Trim();
-            var nv = db.NhanViens.Find(maNV);
+            var nv = db.NhanVien.Find(maNV);
             if (nv == null)
             {
                 MessageBox.Show("Không tìm thấy nhân viên để sửa.");
@@ -201,11 +224,11 @@ namespace QuanLyChanNuoi
             if (confirm == DialogResult.No) return;
 
             string maNV = dvgNhanVien.SelectedRows[0].Cells[0].Value.ToString();
-            var nv = db.NhanViens.Find(maNV);
+            var nv = db.NhanVien.Find(maNV);
 
             if (nv != null)
             {
-                db.NhanViens.Remove(nv);
+                db.NhanVien.Remove(nv);
                 try
                 {
                     db.SaveChanges();
@@ -245,7 +268,7 @@ namespace QuanLyChanNuoi
         {
             string keyword = txtTimKiem.Text.Trim().ToLower();
 
-            var filteredList = db.NhanViens
+            var filteredList = db.NhanVien
                                  .Where(nv => nv.MaNhanVien.ToLower().Contains(keyword)
                                             || nv.HoTen.ToLower().Contains(keyword))
                                  .ToList();

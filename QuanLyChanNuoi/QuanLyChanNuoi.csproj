@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="packages\EntityFramework.6.5.1\build\EntityFramework.props" Condition="Exists('packages\EntityFramework.6.5.1\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
@@ -42,6 +42,24 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1652.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -66,6 +84,26 @@
     </Compile>
     <Compile Include="FormHomeUser.Designer.cs">
       <DependentUpon>FormHomeUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LivestockRepost.cs" />
+    <Compile Include="Models\ChiTietHoaDon.cs" />
+    <Compile Include="Models\ChucVuNhanVien.cs" />
+    <Compile Include="Models\ChuongVatNuoi.cs" />
+    <Compile Include="Models\HoaDon.cs" />
+    <Compile Include="Models\LiveStockContextDB.cs" />
+    <Compile Include="Models\Log_LichSuChuong.cs" />
+    <Compile Include="Models\NhaCungCap.cs" />
+    <Compile Include="Models\NhaCungCap_VatTu.cs" />
+    <Compile Include="Models\NhanVien.cs" />
+    <Compile Include="Models\ToNhanVien.cs" />
+    <Compile Include="Models\VatNuoi.cs" />
+    <Compile Include="Models\VatTu.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="User case Admin\FormBaocaothongke.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User case Admin\FormBaocaothongke.Designer.cs">
+      <DependentUpon>FormBaocaothongke.cs</DependentUpon>
     </Compile>
     <Compile Include="User case Admin\FormNhaCungCap.cs">
       <SubType>Form</SubType>
@@ -117,23 +155,22 @@
     <Compile Include="User case Admin\FormVatNuoi.Designer.cs">
       <DependentUpon>FormVatNuoi.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\ChiTietHoaDon.cs" />
-    <Compile Include="Models\ChucVuNhanVien.cs" />
-    <Compile Include="Models\ChuongVatNuoi.cs" />
-    <Compile Include="Models\HoaDon.cs" />
-    <Compile Include="Models\LiveStockContextDB.cs" />
-    <Compile Include="Models\Log_LichSuChuong.cs" />
-    <Compile Include="Models\NhaCungCap.cs" />
-    <Compile Include="Models\NhaCungCap_VatTu.cs" />
-    <Compile Include="Models\NhanVien.cs" />
-    <Compile Include="Models\ToNhanVien.cs" />
-    <Compile Include="Models\VatNuoi.cs" />
-    <Compile Include="Models\VatTu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormBaoCao.rdlc" />
+    <Compile Include="User case Admin\FormXemhoadon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User case Admin\FormXemhoadon.Designer.cs">
+      <DependentUpon>FormXemhoadon.cs</DependentUpon>
+    </Compile>
+    <Content Include="FormBaoCao.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <EmbeddedResource Include="FormHomeUser.resx">
       <DependentUpon>FormHomeUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User case Admin\FormBaocaothongke.resx">
+      <DependentUpon>FormBaocaothongke.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User case Admin\FormNhaCungCap.resx">
       <DependentUpon>FormNhaCungCap.cs</DependentUpon>
@@ -170,7 +207,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="User case Admin\FormXemhoadon.resx">
+      <DependentUpon>FormXemhoadon.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\FormChuongNuoi.datasource" />
+    <None Include="Properties\DataSources\FormNhaCungCap.datasource" />
+    <None Include="Properties\DataSources\FormNhaphoadon.datasource" />
+    <None Include="Properties\DataSources\FormQuanLyNhanVien.datasource" />
+    <None Include="Properties\DataSources\FormQuanLyVatTu.datasource" />
+    <None Include="Properties\DataSources\FormVatNuoi.datasource" />
+    <None Include="Properties\DataSources\LivestockRepost.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -226,7 +273,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="img\Icon\icons8-shop-64.png" />
+<<<<<<< HEAD
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+=======
     <None Include="img\Icon\pawprint.png" />
+>>>>>>> main
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
